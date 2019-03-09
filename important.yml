@@ -3,3 +3,7 @@ profile:
 
 onlyInNoProfile:
   true22
+eureka:
+  client:
+    service-url:
+      cnZone: http://localhost:8761/eureka/
