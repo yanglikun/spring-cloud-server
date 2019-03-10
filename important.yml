@@ -9,4 +9,4 @@ eureka:
       cnZone: http://localhost:8761/eureka/
 ylk:
   name: ylk
-  age: 21
+  age: 55
