@@ -1,4 +1,4 @@
-erver:
+server:
   port: 8888
 #配置新的映射路径
 zuul:
