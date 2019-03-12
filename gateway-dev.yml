@@ -10,7 +10,7 @@ zuul:
     #排除路由路径，还有排除service用 ignoredServices
     #  ignored-patterns: [/ylko/test/access,/order2/test/access]
     #ignored-patterns: [/**/test/access,/ylko/test/config]
-    ignored-patterns: [/ylko/test/config]
+  ignored-patterns: [/ylko/test/config]
   sensitive-headers:  #设置为空，忽略默认值
 #超时，还要继续看看额。
 hystrix.command.default.execution.timeout.enabled: false
