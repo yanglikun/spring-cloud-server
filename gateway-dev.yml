@@ -8,12 +8,6 @@ zuul:
     ylkOrder: #自定义
       path: /ylko/**   #自定义的路径
       serviceId: order #已有的服务
-    ylkconfig:
-      path: /ylkconfig/**
-      serviceId: config-server
-    ylkconfig1:
-      path: /ylkconfig1/**
-      serviceId: CONFIG-SERVER
     order: /order2/**
     #排除路由路径，还有排除service用 ignoredServices
     #  ignored-patterns: [/ylko/test/access,/order2/test/access]
