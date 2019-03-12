@@ -1,0 +1,29 @@
+server:
+  port: 8888
+#配置新的映射路径
+zuul:
+  routes:
+    ylkOrder: #自定义
+      path: /ylko/**   #自定义的路径
+      serviceId: order #已有的服务
+    ylkconfig:
+      path: /ylkconfig/**
+      serviceId: config-server
+    ylkconfig1:
+      path: /ylkconfig1/**
+      serviceId: CONFIG-SERVER
+    order: /order2/**
+    #排除路由路径，还有排除service用 ignoredServices
+#  ignored-patterns: [/ylko/test/access,/order2/test/access]
+  ignored-patterns: [/**/test/access]
+  sensitive-headers:  #设置为空，忽略默认值
+#超时，还要继续看看额。
+hystrix.command.default.execution.timeout.enabled: false
+ribbon:
+  ConnectTimeout:  10000
+  ReadTimeout:  10000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
